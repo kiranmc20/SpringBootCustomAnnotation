@@ -31,7 +31,6 @@ public class PartialResponseAspect {
     }
 
     private Map<String, String> processPartialResponse(String requiredFields, Map<String, String> responseMap){
-
         Map<String, String> filteredResponseMap = new LinkedHashMap<>();
         if(!requiredFields.isEmpty()){
             String[] fieldsArr = requiredFields.split(",");
